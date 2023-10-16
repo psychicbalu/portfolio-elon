@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #444;
+      padding: 0.5em 0;
+    }
+
+    h3{
+        text-align: center;
+        margin-right: -896px;
+        margin-top: -50px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 1em;
+      margin: 0 1em;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .about-me-section {
+      text-align: center;
+      padding: 2em;
+      background-color: #fff;
+      margin-bottom: 2em;
+    }
+
+    .about-me-section img {
+      border-radius: 50%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .section-container {
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .portfolio-section {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    .portfolio-item {
+  margin: 0 1em 2em 1em;
+  text-align: center;
+  max-width: 300px;
+  transition: transform 0.3s ease; 
+}
+
+    .portfolio-item img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .portfolio-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(360deg); /* Apply the rotation on hover */
+}
+
+    .skills {
+      text-align: center;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      display: inline-block;
+      margin: 0.5em;
+      padding: 0.5em 1em;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #555;
+    }
+
+
+    
+  </style>
+
+  
+  
+</head>
+
+<body>
+
+  <header>
+    <h1>Elon Musk</h1>
+    <p>Software Engineer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="section-container">
+    <section id="about" class="about-me-section">
+      <h2>About Me</h2>
+      <img src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" height="10%" width="10%" alt="Your Name">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et gravida dolor.</p>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <!-- Add more skills as needed -->
+      </ul>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="portfolio" class="portfolio-section">
+      <h3 >Projects</h3>
+      <div class="portfolio-item">
+        <img src="paypal.png" height="50%" width="50%" alt="Work 1">
+      </div>
+
+      <div class="portfolio-item">
+        <img src="./Tesla-Logo-Hero.webp" alt="Work 2">
+      </div>
+      <div class="portfolio-item">
+        <img src="The_Boring_Company-Logo.wine.png" alt="Work 2">
+      </div>
+      <div class="portfolio-item">
+        <img src="Neuralink_Logo.png" alt="Work 2">
+      </div>
+      <div class="portfolio-item">
+        <img src="https://www.spacex.com/static/images/share.jpg" alt="Work 2">
+      </div>
+    </section>
+  </div>
+
+  <section id="contact">
+    <h2 style="text-align: center;">Contact Me</h2>
+    <div class="contact-form">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2023 Your Name. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
